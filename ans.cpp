@@ -1,7 +1,11 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-
+/**
+    CartItem is a class for storing the item details with following parameters: 
+    @param : productName, untiPrice, gst, quantity
+    with getter functions and a setter constructor
+*/
 class CartItem {
     private: 
         string productName;
@@ -34,6 +38,12 @@ class CartItem {
             return this->quantity;
         }
 };
+
+/**
+    ShoppingCart contains business logic of the program.
+    with multiple functions as follow's:
+        addItem(), productWithMaxGST(), totalAmount()
+*/
 
 class ShoppingCart {
     private : 
